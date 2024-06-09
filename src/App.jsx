@@ -7,7 +7,6 @@ import "./App.css";
 import FABAndFormComp from "./components/FABAndFormComp";
 import NavBar from "./components/NavBar";
 
-
 import SelectorElem from "./components/SelectorElem";
 import TextAreaElem from "./components/TextAreaElem";
 import AttachmentElem from "./components/AttachmentElem";
@@ -17,9 +16,7 @@ import FormHead from "./components/FormHead";
 import { top100Films } from "./MovieList";
 
 function App() {
-
   const actions = [
-    
     {
       icon: <QuestionAnswerIcon />,
       name: "Contact us",
@@ -103,7 +100,6 @@ function App() {
       ),
       formElem: (
         <>
-          
           <SelectorElem label={"Choose a section"} options={top100Films} />
           <TextAreaElem
             label={
@@ -127,7 +123,7 @@ function App() {
         }
       />
 
-     <FABAndFormComp actions={actions}/>
+      <FABAndFormComp actions={actions} />
     </>
   );
 }
